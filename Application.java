@@ -1,5 +1,5 @@
 public class Application {
-    // Static variables
+   
     static int staticVar1 = 10;
     static double staticVar2 = 3.14;
     static String staticVar3 = "Hello";
@@ -11,7 +11,7 @@ public class Application {
     static short staticVar9 = 30000;
 
     public static void main(String[] args) {
-        // Local variables
+      
         int localVar1 = 20;
         double localVar2 = 2.71;
         String localVar3 = "World";
@@ -21,7 +21,7 @@ public class Application {
         float localVar7 = 3.3f;
         byte localVar8 = -128;
 
-        // Display static variables
+        
         System.out.println("Static Variables:");
         System.out.println("staticVar1 = " + staticVar1);
         System.out.println("staticVar2 = " + staticVar2);
@@ -33,7 +33,7 @@ public class Application {
         System.out.println("staticVar8 = " + staticVar8);
         System.out.println("staticVar9 = " + staticVar9);
 
-        // Display local variables
+        
         System.out.println("\nLocal Variables:");
         System.out.println("localVar1 = " + localVar1);
         System.out.println("localVar2 = " + localVar2);
