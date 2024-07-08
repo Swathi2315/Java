@@ -1,31 +1,34 @@
 public class Shopping {
-    public static void main(String args[]) {
-        String items[] = {"Shirt", "Jeans", "Shoes"};
-        int prices[] = {25, 50, 80};
-        long orderNumbers[] = {1234567890123L, 9876543210987L, 2468013579246L};
-        char categories[] = {'Clothing', 'Accessories', 'Footwear'};
+   
+    public static void browseCategory(String category) {
+        System.out.println("Browsing category: " + category);
+    }
 
-        System.out.print("Items are: ");
-        for (int i = 0; i < items.length; i++) {
-            System.out.print(items[i] + " ");
-        }
-        System.out.println("\n");
+    public static void browseCategory(String category, String subcategory) {
+        System.out.println("Browsing category: " + category + " with subcategory: " + subcategory);
+    }
 
-        System.out.print("Prices are: ");
-        for (int i = 0; i < prices.length; i++) {
-            System.out.print(prices[i] + " ");
-        }
-        System.out.println("\n");
+    public static void addToWishlist(String productId) {
+        System.out.println("Adding product with ID: " + productId + " to wishlist.");
+    }
 
-        System.out.print("Order numbers are: ");
-        for (int i = 0; i < orderNumbers.length; i++) {
-            System.out.print(orderNumbers[i] + " ");
-        }
-        System.out.println("\n");
+    public static void addToWishlist(String productId, int quantity) {
+        System.out.println("Adding " + quantity + " units of product with ID: " + productId + " to wishlist.");
+    }
 
-        System.out.print("Categories are: ");
-        for (int i = 0; i < categories.length; i++) {
-            System.out.print(categories[i] + " ");
-        }
+    public static void applyCoupon(String couponCode) {
+        System.out.println("Applying coupon code: " + couponCode);
+    }
+
+    public static void applyCoupon(String couponCode, double minPurchase) {
+        System.out.println("Applying coupon code: " + couponCode + " with minimum purchase: " + minPurchase);
+    }
+
+    public static void checkout(String cartId) {
+        System.out.println("Checking out cart with ID: " + cartId);
+    }
+
+    public static void checkout(String cartId, String paymentMethod) {
+        System.out.println("Checking out cart with ID: " + cartId + " using payment method: " + paymentMethod);
     }
 }
