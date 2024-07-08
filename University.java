@@ -1,31 +1,52 @@
 public class University {
-    public static void main(String args[]) {
-        String universities[] = {"Sahyadri", "VTU", "ALVAS"};
-        int established[] = {2007, 1902, 1970};
-        long endowments[] = {41000000000L, 29000000000L, 16000000000L};
-        char regions[] = {'Mangalore', 'Belgaum', 'Moodbidri'};
 
-        System.out.print("Universities are: ");
-        for (int i = 0; i < universities.length; i++) {
-            System.out.print(universities[i] + " ");
-        }
-        System.out.println("\n");
+    static  String studentName = "Kruthika G K";
+   static int studentID= 12345;
+    static String courseName= "JAVA";
+   static double grade= 3.8;
+    static int year = 2022;
 
-        System.out.print("Established years are: ");
-        for (int i = 0; i < established.length; i++) {
-            System.out.print(established[i] + " ");
-        }
-        System.out.println("\n");
+     
+   
 
-        System.out.print("Endowments are: ");
-        for (int i = 0; i < endowments.length; i++) {
-            System.out.print(endowments[i] + " ");
-        }
-        System.out.println("\n");
-
-        System.out.print("Regions are: ");
-        for (int i = 0; i < regions.length; i++) {
-            System.out.print(regions[i] + " ");
+    public static void getStudentName() {
+        if (studentName != null) {
+            System.out.println("Student Name: " + studentName);
+        } else {
+            System.out.println("Student name not available.");
         }
     }
+
+    public static void getStudentID() {
+        if (studentID > 0) {
+            System.out.println("Student ID: " + studentID);
+        } else {
+            System.out.println("Invalid Student ID.");
+        }
+    }
+
+    public static void getCourseName() {
+        if (courseName != null) {
+            System.out.println("Course Name: " + courseName);
+        } else {
+            System.out.println("Course name not available.");
+        }
+    }
+
+    public static  void getGrade() {
+        if (grade >= 0.0 && grade <= 4.0) {
+            System.out.println("Grade: " + grade);
+        } else {
+            System.out.println("Invalid grade.");
+        }
+    }
+
+    public static void getYear() {
+        if (year > 0) {
+            System.out.println("Year: " + year);
+        } else {
+            System.out.println("Invalid year.");
+        }
+    }
+
 }
